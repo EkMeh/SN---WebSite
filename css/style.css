@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* header style set start */
+#header
+{
+    position: relative;
+    display:grid;
+    align-items: center;
+    background: rgb(190, 6, 6);
+}
+
+.header .box1
+{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+.header .box1 .btn1
+{
+    position: relative;
+    background: rgb(190, 6, 6);
+    border: none;
+    margin: 1rem 5rem;
+    cursor: pointer;
+}
+
+.header .box1 .btn1 ion-icon 
+{
+   color:white;
+   font-size: 2rem;
+}
+
+.header .box1 h1
+{
+    position: fixed;
+    left:45%;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.header .navBar 
+{
+    display: flex;
+    justify-content:space-evenly;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem 13rem;
+}
+
+.header .navBar .btn5:hover
+{
+    background:rgb(207, 71, 71);
+    transition: .5s;
+    border: .1rem solid rgb(207, 71, 71);
+}
+
+.header .navBar .btn5
+{
+    background: rgb(190, 6, 6);
+    border:.1rem solid white;
+    border-radius: .2rem;
+    color: white;
+    text-transform: uppercase;
+    padding: .5rem 1.8rem;
+    cursor: pointer;
+}
+
+.header .navBar ul
+{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .navBar ul li:hover
+{
+    border-top: .15rem solid gray;
+    border-bottom: .15rem solid rgb(207, 71, 71);
+    transform: .5s;
+}
+
+.header .navBar ul li
+{
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0 .5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.header .dropdown
+{
+    position: absolute;
+    left: 0;top:0;
+    display: grid;
+    align-items: center;
+    width: 20rem;
+    background: black;
+    visibility: hidden;
+    margin-left: -25rem;
+    z-index: 1;
+}
+
+.header .dropdown .box2
+{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.header .dropdown .box2 h1
+{
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    color: white;
+}
+
+.header .dropdown .box2 .btn2
+{   
+    text-transform: uppercase;
+    border: .1rem solid white;
+    background: black;
+    border-radius: .5rem;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+}
+
+.header .dropdown .box2 .btn3
+{
+    border: none;
+    background: black;
+    cursor: pointer;
+}
+
+.header .dropdown .box2 .btn3 ion-icon 
+{
+    color: white;
+    font-size: 1.7rem;
+}
+
+
+.header .dropdown .searchBox
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.header .dropdown .searchBox input
+{
+    background: gray;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom-left-radius: .3rem;
+    border-top-left-radius: .3rem;
+    width: 15rem;
+    outline: none;
+    padding-left: .2rem;
+}
+
+.header .dropdown .searchBox input::placeholder
+{
+    color: black;
+    padding-left: .2rem;
+}
+.header .dropdown .searchBox ion-icon
+{
+    font-size: 1.63rem;
+    color: white;
+    background: gray;
+    outline: none;
+    border-bottom-right-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.header .dropdown .nav 
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-transform: uppercase;
+    margin: .5rem 1.8rem;
+}
+
+.header .dropdown .nav ul li 
+{
+    list-style: none;
+    font-size: 1.2em;
+    padding: .1rem 0;
+    cursor: pointer;
+}
+
+.header .dropdown .nav ul li::hover
+{
+    color: rgb(207, 71, 71);
+}
+
+/* header style set end */
+
+/* center style set start  */
+#center
+{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.center .box-c1
+{
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center .box-c1 h3
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-bottom:.5rem solid black;
+    max-width: 9rem;
+    cursor: pointer;
+}
+
+.center .box-c1 ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center .box-c1 ul li
+{
+    list-style: none;
+    margin: .2rem 0;
+}
+
+.center .box-c1 ul li:hover
+{
+    color: rgb(207, 71, 71);
+    cursor: pointer;
+}
+
+/* center style set end  */
+
+/* footer style set start  */
+#footer
+{
+    position: relative;
+    margin: 7rem;
+    border-top: .2rem solid black;
+}
+
+#footer .box-f1
+{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#footer .box-f1 h1
+{
+    color: rgb(190, 6, 6);
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+}
+
+#footer .box-f1 ul 
+{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+#footer .box-f1 ul li
+{
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: .5rem 1rem;
+}
+
+#footer .box-f1 ul li:hover
+{
+    color: rgb(207, 71, 71);
+    cursor: pointer;
+}
+
+#footer .box-f1 p
+{
+    margin:.5rem 0;
+}
+
+/* footer style set end  */
